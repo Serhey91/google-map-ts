@@ -6,8 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google map</title>
   <script type='module' src='./dist/bundle.js'></script>
+  <style>
+  html {
+    font-family: sans-serif;
+  }
+
+  #app {
+    width: 90%;
+    height: 20rem;
+    border: 1px solid #ccc;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  form {
+    text-align: center;
+    margin: 2rem auto;
+  }
+  </style>
 </head>
 <body>
-
+  <div id="app">
+    <p>Please enter an adress here</p>
+  </div>
+  <form>
+    <input type="text" name="address" id="address">
+    <input type="submit" value="Search adress">
+  </form>
 </body>
 </html>
